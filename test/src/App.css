@@ -1,0 +1,81 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  margin-top: 0;
+  min-height: 100vh;
+  background-image: url("Get.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button.clear-selection-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #aa3636;
+  color: #ffffff;
+  border: 2px solid black;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.table {
+  margin-top: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: black;
+}
+
+th,
+td {
+  border: 1px solid #141313;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+button.go-to-pay-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(214, 156, 48);
+  color: #ffffff;
+  border: 2px solid black;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+button.go-to-pay-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 500px) {
+  .table {
+    max-width: 100%;
+    width: auto;
+    overflow-x: scroll;
+  }
+}
+
